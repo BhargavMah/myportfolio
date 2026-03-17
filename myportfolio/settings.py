@@ -27,7 +27,7 @@ DEBUG = False
 
 
 ALLOWED_HOSTS = [
-    "localhost",
+    ".now.sh",
     "127.0.0.1",
     ".vercel.app"
 ]
@@ -83,8 +83,12 @@ WSGI_APPLICATION = 'myportfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'yLKVKFeGJPtHzMeVauZQHlRRlxwKdoKZ',
+        'HOST': 'nozomi.proxy.rlwy.net',
+        'PORT': '32039',
     }
 }
 
